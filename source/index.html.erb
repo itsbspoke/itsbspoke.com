@@ -1,0 +1,123 @@
+<!doctype html>
+<%= partial "head" %>
+<div class="background--home-image"></div> 
+<%= partial "nav_small" %>
+<div class="full-width home">
+  <!-- SHOW ONLY MEDIUM AND UP -->
+    <%= partial "nav" %>
+  <div class="row small-padding--t-small">
+    <div class="small-11 medium-11 large-11 small-centered columns">
+
+      <!-- home text -->
+      <div class="row medium-padding--tb-large">
+        <div class="large-12 columns small-padding--tb-medium">
+          <h1 class="alpha">We create and custom fit websites, apps and the teams that support them.</h1>
+          <h3 class="type--regular medium-padding--t-medium">Headquartered in Charlotte, NC, it's bspoke is a custom software development company that's solved business problems with software...</h3>
+          <br/>
+          <div class="row">
+            <div class="small-12 small-centered columns medium-padding--tb-medium table">
+              <div class="center">
+                <a href="/contact.html" class="button large radius button--border button--transparent">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Home text  -->
+    </div>
+  </div>
+</div>
+
+
+<!-- What we Do -->
+<div class="full-width background--grid small-padding--tb-large">
+  <div class="row">
+    <div class="small-12 large-9 small-centered columns table">
+      <div class="center">
+        <h1 class="font--thin color--dark-blue">What we can do</h2>
+        <hr>
+      </div>
+    </div>
+  </div><!-- /.row -->
+  <div class="row">
+    <div class="small-12 large-9 small-centered columns">
+      <% link_to '/app-development.html' do %>
+        <div class="small-12 medium-4 large-4 columns table small-padding--tb-medium">
+          <div class="center">
+              <%= image_tag '../img/home-app.png' %>
+            <h4 class="subheader uppercase">App Development</h4>
+          </div>
+        </div>
+      <% end %>
+      <% link_to '/consulting.html' do %>
+        <div class="small-12 medium-4 large-4 columns table small-padding--tb-medium">
+          <div class="center">
+            <%= image_tag '../img/home-consulting.png' %>
+            <h4 class="subheader uppercase">Consulting</h4>
+          </div>
+        </div>
+      <% end %>
+      <% link_to '/web.html' do %>
+        <div class="small-12 medium-4 large-4 columns table small-padding--tb-medium">
+          <div class="center">
+            <%= image_tag '../img/home-web.png' %>
+            <h4 class="subheader uppercase">Website & CMS</h4>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div><!-- /.row -->
+</div>
+<!-- /End What we do -->
+
+<!--- Start App Development -->
+<div class="full-width background--blue small-padding--tb-large">
+  <div class="row row--full medium-padding--tb-large" data-equalizer>
+    <div class="small-12 medium-12 large-7 columns padding--l-zero" data-equalizer-watch>
+      <%= image_tag '../img/home-app-graphic.png'%>
+    </div>
+
+    <div class="small-12 medium-12 large-5 small-centered medium-centered large-uncentered columns small-padding--tb-large large-padding--tb-xxlarge table large-padding--r-xxlarge medium-padding--rl-xxlarge" data-equalizer-watch>
+      <div class="center aligned-left">
+        <h2 >App Development</h2>
+        <p class="type--large">Frustrated with the communication gaps, lack of vision, and ever-expanding timelines of offshore projects? Is your accountant having palpitations at the price tags of large software consultancies?  it’s bspoke has a hybrid model that allows you to find a great fit for your budget.</p>
+        <p class="type--light type--semi-bold">App Development cta  <%= link_to 'Learn More', '/app-development.html' %></p>
+      </div>
+    </div>
+  </div><!-- /.row -->
+</div>
+<!-- /End App Development -->
+
+
+
+<!-- What Makes us different -->
+<div class="full-width background--white">
+  <div class="row row--full" data-equalizer>
+    <div class="small-12 medium-7 large-5 columns small-padding--tb-xxlarge large-offset-1 table" data-equalizer-watch>
+      <div class="center aligned-left">
+        <h2>What makes us different</h2>
+        <p class="type--large">Our founder, Jim Van Fleet, has built a reputation as a technology expert and leader in Charlotte’s entrepreneurial community. He has extinguished technical problems on sites doing $30M in daily revenue. He has built applications that have scaled to over 100k users. He has relationships with hundreds of technologists, entrepreneurs, and investors nationwide. 
+        </p>
+        <p class="type--light type--semi-bold">itsbspoke helps you to ...  <a href=""> Learn More </a></p>
+      </div>
+    </div>
+    <div class="small-12 medium-5 large-5 columns background--jim-home padding--rl-zero" data-equalizer-watch>
+      <img class="show-for-small-only" src="../img/jim-couch-small.png" width="100%"/>
+    </div>
+  </div><!-- /.row -->
+</div>
+<!-- /End What makes us different -->
+ 
+<!-- Ready to start -->
+<div class="full-width background--gray-light border--t ready show-for-medium-up">
+  <%= partial "ready" %> 
+<%= partial "footer" %>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
