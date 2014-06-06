@@ -1,7 +1,8 @@
-<!doctype html>
-<%= partial "head" %>
-<div class="background--home-image"></div> 
-<%= partial "nav_small" %>
+<% content_for :background_image do %>
+  <div class="background--home-image"></div> 
+<% end %>
+
+
 <div class="full-width home">
   <!-- SHOW ONLY MEDIUM AND UP -->
     <%= partial "nav" %>
@@ -107,17 +108,3 @@
   </div><!-- /.row -->
 </div>
 <!-- /End What makes us different -->
- 
-<!-- Ready to start -->
-<div class="full-width background--gray-light border--t ready show-for-medium-up">
-  <%= partial "ready" %> 
-<%= partial "footer" %>
-
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>

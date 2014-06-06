@@ -1,0 +1,19 @@
+<!doctype html>
+<%= partial "head" %>
+<%= yield_content :background_image %>
+<%= partial "nav_small" %>
+
+<%= yield %>
+
+<!-- Ready to start -->
+<div class="full-width background--gray-light border--t ready show-for-medium-up">
+  <%= partial "footer" %>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
