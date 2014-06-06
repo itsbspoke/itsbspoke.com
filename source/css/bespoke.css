@@ -1,0 +1,254 @@
+/*--- Home ---*/
+img.background_home {
+  position: fixed;
+}
+
+/*--- Nav --*/
+
+ul.nav li a {
+  font-family: 'museo-sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color:#000;
+  padding-left: 2rem;
+  font-weight:400;
+}
+
+
+/*-------------------------------------*/
+/*-------------- Utility --------------*/
+/*-------------------------------------*/
+
+.full-width {
+  width:100%;
+}
+
+.center {
+  display: table;
+  text-align:center;
+  width:100%;
+}
+
+/*--- headers ---*/
+
+h1.alpha {
+  font-size: 4.34rem;
+  line-height: 1.24;
+  font-weight: 200;
+}
+
+.background--blue .type--light, .background--blue h3.subheader.uppercase, .background--blue h3{
+  color:#00525E;
+}
+
+.background--blue h2{ 
+  color:#FFF;
+  font-weight: 200;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.background--blue p a{
+  color:#FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.background--img-comp h1, .background--img-comp .subheader.uppercase {
+  color:#ddd;
+  text-shadow: 1px 1px 2px rgba(84, 84, 84, 1);
+}
+
+.background--blue p a{
+  color:#FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.background--gray-dark h4.subheader {
+  color:#ccc;
+}
+
+.background--gray-dark h1, .background--gray-dark h2, .background--gray-dark h3, .background--gray-dark h4{
+  color:#FFF;
+}
+
+.background--img-comp {
+  background:url('../img/bg-img-comp.png');
+  background-attachment:fixed;
+  z-index: -10;
+  background-size: 100% ;
+}
+
+.background--img-app {
+  background:url('../img/bg-img-app.png');
+  background-attachment:fixed;
+  z-index: -10;
+  background-size: 100% ;
+}
+
+.background--img-web {
+  background:url('../img/bg-img-web.png');
+  background-attachment:fixed;
+  z-index: -10;
+  background-size: 100% ;
+}
+
+.border--tb {
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+
+.border--rl {
+  border-right:1px solid #eee;
+  border-left:1px solid #eee;
+}
+
+.border--r {
+  border-right:1px solid #eee;
+}
+
+.border--l {
+  border-left:1px solid #eee;
+}
+
+.background--blue .border--rl {
+  border-right:1px solid #019BB0;
+  border-left:1px solid #019BB0;
+}
+
+/*--- type styles ---*/
+
+.font--thin {
+  font-weight: 100;
+}
+
+.font--light {
+  font-weight: 200;
+}
+
+.type--regular {
+  font-weight: 300;
+}
+
+.type--semi-bold {
+  font-weight: 500;
+}
+
+.type--large {
+  font-size:1.28rem;
+}
+
+.type--light {
+  color:#788991;
+}
+
+p.type--semi-bold.type--large.type--light {
+  margin-bottom: 0;
+}
+
+p a {
+  border-bottom: 1px solid #FF5754;
+}
+
+.background--blue a {
+  color:#00525E;
+}
+
+/*--- Backgrounds for .full-width ---*/
+.background--grid {
+  background-image: url("../img/grid.png");
+  background-repeat: repeat;
+}
+
+.background--comp {
+  background-image: url("../img/bg-secondary.png");
+  background-repeat: repeat;
+}
+
+.background--blue{
+  background-color:#00B5CE;
+}
+
+.background--gray-dark{
+  background-color:#414141;
+}
+
+.background--gray-red{
+  background-color:#FF5754;
+}
+
+
+/*--- add header ---*/
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.subheader.uppercase {
+  font-family: 'museo-sans', sans-serif;
+  font-weight: 600;
+  color: #788991;
+}
+
+.padding--tb-large {
+  padding-top: 2.5rem;
+  padding-bottom:2.5rem;
+}
+
+.padding--tb-medium{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.padding--tb-small{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.padding--t-large {
+  padding-top: 2.5rem;
+}
+
+.padding--t-medium{
+  padding-top: 1.5rem;
+}
+
+.padding--t-small{
+  padding-top: .5rem;
+}
+
+.padding--b-large {
+  padding-bottom: 2.5rem;
+}
+
+.padding--b-medium{
+  padding-bottom: 1.5rem;
+}
+
+.padding--b-small{
+  padding-bottom: .5rem;
+}
+
+.padding--rl-small {
+  padding-right:.5em;
+  padding-left:.5em;
+}
+
+.padding--rl-medium{
+  padding-right:1.5em;
+  padding-left:1.5em;
+}
+
+.padding--rl-large{
+  padding-right:2.5em;
+  padding-left:2.5em;
+}
+
+/*--- Buttons ---*/
+.button.button--border.button--white {
+  background:transparent;
+  border:1px solid #fff;
+  letter-spacing: 0.0625em;
+}
+
+.button.button--border.button--white:hover {
+  background:rgba(255,255,255,0.2);
+}
