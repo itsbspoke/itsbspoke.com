@@ -35,6 +35,11 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-51227922-4' # Replace with your property ID.
+end
+
+
 # Reload the browser automatically whenever files change
 # configure :development do
 #   activate :livereload
@@ -81,4 +86,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  #
+
 end
