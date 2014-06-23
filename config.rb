@@ -46,6 +46,13 @@
 #     "Helping"
 #   end
 # end
+#
+
+helpers do
+  def cta_bg
+    current_page.data.cta_bg || "background--gray-light"
+  end
+end
 
 
 set :css_dir, 'stylesheets'
