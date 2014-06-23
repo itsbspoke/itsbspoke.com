@@ -52,6 +52,10 @@ helpers do
   def cta_bg
     current_page.data.cta_bg || "background--gray-light"
   end
+
+  def title
+    current_page.data.title || "itsbspoke"
+  end
 end
 
 

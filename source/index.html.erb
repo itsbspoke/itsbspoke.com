@@ -1,11 +1,7 @@
-<% content_for :title do %>
-  Welcome to itsbspoke
-<% end %>
-<% content_for :background_image do %>
-  <div class="background--home-image"></div> 
-<% end %>
-
-
+---
+title:  Welcome to itsbspoke
+background_home_image: true
+---
 <div class="full-width home">
   <!-- SHOW ONLY MEDIUM AND UP -->
     <%= partial "nav" %>
@@ -104,7 +100,9 @@
         <h2>What makes us different</h2>
         <p class="type--large">Our founder, Jim Van Fleet, has built a reputation as a technology expert and leader in Charlotte’s entrepreneurial community. He has extinguished technical problems on sites doing $30M in daily revenue. He has built applications that have scaled to over 100k users. He has relationships with hundreds of technologists, entrepreneurs, and investors nationwide. 
         </p>
-        <p class="type--light type--semi-bold">itsbspoke helps you to ...  <a href=""> Learn More </a></p>
+                <div class="center">
+                <a href="/founder.html" class="button large radius button--border button--transparent">About Our Founder</a>
+              </div>
       </div>
     </div>
     <div class="small-12 medium-5 large-5 columns background--jim-home padding--rl-zero" data-equalizer-watch>
@@ -113,3 +111,10 @@
   </div><!-- /.row -->
 </div>
 <!-- /End What makes us different -->
+
+<% content_for :cta do %>
+  <h2 class="color--dark-blue font--thin">Ready?</h2>
+  <p class="type--large type--light type--semi-bold">If you're ready to engage us, <a href="/contact.html">contact us</a>.</p>
+  <p class="type--large type--light type--semi-bold">If you're not sure, each choice below can help you figure it out.</p>
+  <img src="../img/icon-down-circle.png" class="padding--t-small" width="30px"/>
+<% end %>
