@@ -8,6 +8,36 @@
   }
 }
 
+.home {
+  height:100%;
+  h1 {
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 400;
+    text-align:left;
+    text-shadow: 0px 0px 38px rgba(0,0,0,0.7);
+  }
+  h3 {
+    color:#fff;
+    text-shadow: 0px 0px 29px rgba(0,0,0,0.8);
+  }
+}
+
+.home > .row {
+  height:100%;
+  .columns {
+    height:100%;
+  }
+}
+
+.home > .row > .columns > .row{
+  height:85%;
+}
+
+section.main-section {
+  height:100%;
+}
+
 /*--- Nav ---*/
 .top-bar-section .has-dropdown > a {
     padding-right:15px !important;
@@ -21,7 +51,7 @@
   font-family: 'museo-sans', sans-serif;
   text-transform: uppercase;
   font-size: .9rem;
-  color:#323232;
+  color:#fff;
   padding-left: 1rem;
   font-weight:400;
 }
@@ -40,6 +70,7 @@
 
 nav.top-bar.large {
   height:61px;
+  margin-top: 20px;
 }
 
 
@@ -518,13 +549,23 @@ img.background--home-app{
 }
 
 /*--- Buttons ---*/
-.button.button--border.button--transparent {
+.button.button--border.button--transparent.button--black {
   background:transparent;
-  border:1px solid #323232;
-  color:#323232;
+  border:1px solid #000;
+  color:#000;
+  letter-spacing: 0.0625em;
+}
+.button.button--border.button--transparent.button--white {
+  background:transparent;
+  border:1px solid #fff;
+  color:#fff;
   letter-spacing: 0.0625em;
 }
 
-.button.button--border.button--transparent:hover {
+.button.button--border.button--transparent.button--white:hover {
+  background:rgba(255,255,255,0.1);
+}
+
+.button.button--border.button--transparent.button--black:hover {
   background:rgba(0,0,0,0.1);
 }

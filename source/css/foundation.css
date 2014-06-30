@@ -47,7 +47,6 @@ body {
   font-weight: 100;
   font-style: normal;
   line-height: 1;
-  position: relative;
   cursor: default; }
 
 a:hover {
@@ -189,14 +188,8 @@ h1.alpha {
   z-index: -1;
   display: block;
   background-position: center;
-  opacity: 0.8;
   width:100%;
   height:100%;
-  -webkit-filter: blur(9px);
-  -moz-filter: blur(9px);
-  -o-filter: blur(9px);
-  -ms-filter: blur(9px);
-  filter: blur(9px);
   .type--white{
     text-shadow: 1px 1px 9px rgba(150, 150, 150, 1);
   }
@@ -252,6 +245,14 @@ h1.alpha {
   min-width:305px;
 }
 
+.background--overlay {
+  background-color: #000;
+  opacity: 0.1;
+  width:100%;
+  height:100%;
+  position: absolute;
+}
+
 @media only screen {
   .background--blue .border--rl {
     border-right:none;
@@ -275,6 +276,10 @@ h1.alpha {
 
   .background--about-charlotte {
     background:url('../img/about-charlotte.png');
+  }
+
+  .background--about-approach {
+    background:url('../img/about-approach.jpg');
   }
 
   .border--tb {
@@ -3982,7 +3987,8 @@ dialog[open] {
   -webkit-backface-visibility: hidden;
   position: relative;
   width: 100%;
-  overflow: hidden; }
+  height:100%;
+   }
   .off-canvas-wrap.move-right, .off-canvas-wrap.move-left {
     min-height: 100%;
     -webkit-overflow-scrolling: touch; }
@@ -3991,6 +3997,7 @@ dialog[open] {
   -webkit-backface-visibility: hidden;
   position: relative;
   width: 100%;
+  height:100%;
   *zoom: 1;
   -webkit-transition: -webkit-transform 500ms ease;
   -moz-transition: -moz-transform 500ms ease;
@@ -4908,6 +4915,13 @@ label.error {
     background-repeat: no-repeat;
     background-size: auto;
   }
+
+  .background--about-approach {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
   .small-block-grid-1 > li {
     width: 100%;
     list-style: none; }
@@ -5006,7 +5020,7 @@ label.error {
 
 @media only screen and (min-width: 40.063em) {
   h1.alpha {
-  font-size: 3.2rem;
+  font-size: 250%;
   line-height: 1.24;
   }
 
@@ -5135,13 +5149,18 @@ label.error {
       clear: none; }
     .medium-block-grid-12 > li:nth-of-type(12n+1) {
       clear: both; } }
-
+@media only screen and (min-width: 56.063em) {
+  h1.alpha {
+  font-size: 300%;
+  line-height: 1.24;
+  }
+}
 @media only screen and (min-width: 64.063em) {
   .background--img-map {
     background-size: 150%;
   }
   h1.alpha {
-  font-size: 3.6rem;
+  font-size: 3.4rem;
   line-height: 1.24;
   }
   .background--jim-app{
@@ -5297,7 +5316,7 @@ kbd {
   }
 
   h1.alpha {
-  font-size: 4rem;
+  font-size:3.8rem;
   line-height: 1.24;
   }
   .background--home-image {
@@ -5314,9 +5333,10 @@ kbd {
     background-position: top;
   }
   .background--home-image {
-    background-image:url('../img/Charlotte-Skyline-small.png');
+    background-image:url('../img/bg-img-home.png');
     background-position: top;
-    background-size: 173%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .small-padding--tb-large {
     padding-top: 2.5rem;
@@ -5709,7 +5729,7 @@ kbd {
   }
 
   .background--home-image {
-    background-image:url('../img/Charlotte-Skyline.png');
+    background-image:url('../img/bg-img-home.png');
   }
   .large-padding--tb-large {
     padding-top: 2.5rem;
@@ -5786,6 +5806,16 @@ kbd {
   .large-padding--rl-xlarge{
     padding-right:3.5rem;
     padding-left:3.5rem;
+  }
+
+  .large-padding--rl-xxlarge{
+    padding-right:4.5rem;
+    padding-left:4.5rem;
+  }
+
+  .large-padding--rl-3xlarge {
+    padding-left:5rem;
+    padding-right:5rem;
   }
 
   .large-padding--r-small {
@@ -5891,7 +5921,7 @@ kbd {
   }
   .background--home-image{
     background-size:136%;
-    background-position: bottom;
+    background-position: 41% 62%;
   }
   .padding--r-3xlarge.presence {
     padding-top:4rem;
