@@ -6,6 +6,9 @@ gem "middleman", "~>3.3.2"
 gem 'middleman-gh-pages'
 gem "middleman-google-analytics"
 
+gem "thin"
+gem "foreman"
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
