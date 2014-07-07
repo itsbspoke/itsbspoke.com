@@ -35,10 +35,15 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-51227922-4' # Replace with your property ID.
+end
+
+
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -46,6 +51,17 @@
 #     "Helping"
 #   end
 # end
+#
+
+helpers do
+  def cta_bg
+    current_page.data.cta_bg || "background--gray-light"
+  end
+
+  def title
+    current_page.data.title || "itsbspoke"
+  end
+end
 
 
 set :css_dir, 'stylesheets'
@@ -70,4 +86,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  #
+
 end

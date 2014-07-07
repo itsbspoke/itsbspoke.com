@@ -1,20 +1,17 @@
 <!doctype html>
 <%= partial "head" %>
-<%= yield_content :background_image %>
-<%= partial "nav_small" %>
+  <% if current_page.data.background_home_image %>
+  <div class="background--home-image"></div> 
+  <% end %>
+  <%= partial "nav_small" %>
 
-<%= yield %>
+  <%= yield %>
 
-<!-- Ready to start -->
-<div class="full-width background--gray-light border--t ready show-for-medium-up">
+  <!-- Ready to start -->
   <%= partial "ready" %> 
   <%= partial "footer" %>
 
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+  <%= partial "javascripts" %>
   </body>
 </html>

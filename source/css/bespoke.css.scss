@@ -267,7 +267,7 @@ p a {
   top:0;
   right:50%;
   width:2px;
-  z-index:-5;
+
 }
 
 .center-border--red {
@@ -279,19 +279,36 @@ p a {
   right:50%;
   top:0;
   width:2px;
-  z-index:-1;
+  z-index:5;
 }
 
-svg.center-circle, #trigger1 {
+#trigger1, #trigger2, #trigger3, #trigger4 {
   margin:-30px -30px 0 0;
   position:absolute;
   right:50%;
-  top:50%;
-  z-index:1;
+  top:52%;
+  z-index:10;
 }
 
-#guide .full-width{
-  z-index:-10;
+.circle {
+  margin:-15px -15px 0 0;
+  position:absolute;
+  right:50%;
+  top:50%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px; 
+  z-index: 10;
+  border:2px solid #ccc;
+  background-color: #f6f8f8;
+}
+
+section.z-index--top {
+  z-index:20;
+}
+
+section#guide {
+  z-index: -5;
 }
 
 .border--tb-red {
@@ -302,6 +319,7 @@ svg.center-circle, #trigger1 {
 .border--t-red {
   border-top:4px solid #ED7C79;
 }
+
 
 img.background--home-app{
   background-image: url("../img/home-app-graphic.png");
