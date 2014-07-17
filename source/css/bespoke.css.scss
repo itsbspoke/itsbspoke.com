@@ -11,6 +11,7 @@
 .home {
   height:100%;
   h1 {
+
     text-transform: uppercase;
     color:#fff;
     font-weight: 400;
@@ -70,7 +71,6 @@ section.main-section {
 
 nav.top-bar.large {
   height:61px;
-  margin-top: 20px;
 }
 
 
@@ -553,6 +553,7 @@ img.background--home-app{
   background:transparent;
   border:1px solid #000;
   color:#000;
+  opacity: 0.5;
   letter-spacing: 0.0625em;
 }
 .button.button--border.button--transparent.button--white {
@@ -568,4 +569,31 @@ img.background--home-app{
 
 .button.button--border.button--transparent.button--black:hover {
   background:rgba(0,0,0,0.1);
+}
+
+/* About page */
+
+.svg-container--city {
+  position: absolute;
+  display:block;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  z-index: -1;
+  border-bottom: 35px solid #ffdbd9;
+  height:63%;
+}
+
+.svg--city {
+  position: absolute;
+  bottom: -4px;
+  display:block;
+  margin:0 auto;
+  right: -50%;
+  left: -50%;
+}
+
+.background--pattern {
+  background:url('../img/bg-bespoke-pattern.png');
+  background-repeat: repeat;
 }

@@ -282,6 +282,10 @@ h1.alpha {
     background:url('../img/about-approach.jpg');
   }
 
+  .background--placeholder {
+    background:url('http://placehold.it/800x600');
+  }
+
   .border--tb {
   border-top:1px solid #eee;
   border-bottom:1px solid #eee;
@@ -1601,7 +1605,7 @@ meta.foundation-mq-topbar {
         color: white; }
   .top-bar-section ul li:hover:not(.has-form) > a {
     background: transparent;
-    color: #323232; }
+    color: #FFF; }
   .top-bar-section ul li.active > a {
     background: #008cba;
     color: white; }
@@ -1728,7 +1732,7 @@ meta.foundation-mq-topbar {
       line-height: 45px;}
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background: transparent;
-        color:#323232; 
+        color:#fff; 
         border-bottom: 2px solid #00B5CE;
         cursor: pointer; 
       }

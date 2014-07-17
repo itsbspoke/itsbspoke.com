@@ -32,6 +32,7 @@ ul.nav li a {
 /*--- headers ---*/
 
 h1.alpha {
+  font-family: "franklin-gothic-urw-comp",sans-serif;
   font-size: 4.34rem;
   line-height: 1.24;
   font-weight: 200;

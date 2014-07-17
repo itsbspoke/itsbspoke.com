@@ -1,0 +1,73 @@
+---
+title: Template 
+---
+<!-- Header -->
+<div class="full-width background--red">
+  <%= partial "nav" %>
+  <div class="row large-padding--tb-medium">
+    <div class="small-11 medium-11 large-11 small-centered columns">
+      <div class="row">
+        <div class="large-12 columns">
+          <h1 class="type--white">Template Header</h1>
+          </br>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--- Image Left -->
+<div class="full-width background--white">
+  <div class="row row--full" data-equalizer>
+    <div class="small-12 medium-12 large-6 columns background--placeholder padding--rl-zero" data-equalizer-watch>
+      <img class="hide-for-large-up" src="../img/http://placehold.it/800x600.jpg"/>
+    </div>
+    <div class="small-11 medium-11 large-6 small-centered large-uncentered columns large-padding--tb-5xlarge  small-padding--tb-large large-padding--rl-xxlarge table" data-equalizer-watch>
+      <div class="center aligned-left">
+        <h2>Image Left</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <div class="center">
+          <a href="/newsletter.html" class="button medium radius button--border button--transparent">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--- Bridge -->
+<div class="full-width background--gray-light padding--tb-medium border--tb">
+  <div class="row">
+    <div class="small-11 medium-11 large-8 small-centered columns">
+      <div class="row" data-equalizer>
+        <div class="small-12 medium-10 large-9 columns table" data-equalizer-watch>
+          <div class="center aligned-left">
+            <h4 class="padding--tb-medium"> Bridge between sections Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+          </div>
+        </div>
+        <div class="small-12 medium-2 large-3 columns table" data-equalizer-watch>
+          <div class="center">
+            <img class="padding--b-small" src="../img/about-bspokelogo.png" width="135" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.row -->
+</div>
+
+<!-- Centered Content -->
+<div class="full-width">
+  <div class="row row--full" >
+    <div class="small-11 medium-10 large-7 small-centered large-centered columns large-padding--tb-xxlarge large-padding--r-xlarge large-padding--rl-xlarge medium-padding--tb-large small-padding--tb-large" >
+      <div class="center aligned-left">
+        <h2>Centered Content</h2>
+        <p class="large-padding--r-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </div>
+  </div><!-- /.row -->
+</div>
+
+
+<% content_for :cta do %>
+<% end %>
+
